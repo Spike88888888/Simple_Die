@@ -51,8 +51,10 @@ const unsigned int gNumRoll = 10;
  */
 int main(int argc, char *argv[]) {
 
+	// create the die
 	Dice die(gDieSize);
 	int numRoll = 10;
+	// roll it several time, log results
 	for (int cnt=0; cnt<numRoll; ++cnt) {
 		cout << "Roll die [" << cnt << "] -> " << die.roll() << endl;
 	}
